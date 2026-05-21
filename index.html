@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Control por Sensores</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1e1e2f;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+canvas {
+    border: 2px solid white;
+    margin-top: 20px;
+    background: black;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.info {
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Sensores del Celular</h1>
+
+<p>Pareja #: ______ | Integrantes: ___________________</p>
+
+<button id="activarBtn">
+ ACTIVAR SENSORES (tocar aquí)
+</button>
+
+<div class="info">
+    <p> Inclina el celular para mover el círculo</p>
+    <p id="datos">Esperando datos...</p>
+</div>
+
+<canvas id="lienzo" width="300" height="300"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
